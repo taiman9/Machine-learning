@@ -1,0 +1,34 @@
+1)output question 1
+
+parameters do not change  after 3 epochs 
+[[ 0. ]
+ [-1.5]
+ [ 1. ]
+ [ 1.5]] 12
+Accuracy for preceptron: 62.500%.
+[ 0.99001248 -1.11985019  0.98751561  0.74531835] 400
+Accuracy for avg preceptron: 50.000%.
+kernel perceptron converge after 6 epochs:
+[ 5.  1.  3.  0. -4.  0. -4.  0.]
+Accuracy for kernel preceptron: 100.000%.
+
+2) output question 2
+ perceptron converge after 19 epochs:
+number of mistake in preceptron: 
+476
+avg perceptron converge after 19 epochs:
+number of mistake in avg preceptron: 
+476
+Accuracy for perceptron: 97.800%.
+Accuracy for avg perceptron: 98.100%.
+
+
+3) output question 3
+
+parameters do not change  after 275 epochs 
+Accuracy for perceptron v1: 58.596%.
+Accuracy for avg perceptron v1: 61.404%.
+parameters do not change  after 216 epochs 
+Accuracy for perceptron: 58.070%.
+Accuracy for avg perceptron: 61.053%.
+
