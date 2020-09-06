@@ -1,0 +1,122 @@
+1. Perceptron Convergence:
+
+Exercise 5(a): 
+
+Weight vector at the end of each epoch:
+
+Epoch 1:
+[-1.  -1.5  0.   1.5]
+Epoch 2:
+[ 0.  -1.5  1.   1.5]
+Epoch 3:
+[ 0.  -1.5  1.   1.5]
+Epoch 4:
+[ 0.  -1.5  1.   1.5]
+Epoch 5:
+[ 0.  -1.5  1.   1.5]
+Epoch 6:
+[ 0.  -1.5  1.   1.5]
+Epoch 7:
+[ 0.  -1.5  1.   1.5]
+Epoch 8:
+[ 0.  -1.5  1.   1.5]
+Epoch 9:
+[ 0.  -1.5  1.   1.5]
+Epoch 10:
+[ 0.  -1.5  1.   1.5]
+
+Exercise 5(b): 
+
+Converged after 5 epochs.
+Final values of Dual parameters:
+[5. 1. 3. 0. 4. 0. 4. 0.]
+
+Dual parameters at the end of each epoch:
+
+Epoch 1:
+[1. 0. 0. 0. 1. 0. 1. 0.]
+Epoch 2:
+[2. 1. 1. 0. 2. 0. 2. 0.]
+Epoch 3:
+[3. 1. 2. 0. 3. 0. 3. 0.]
+Epoch 4:
+[4. 1. 3. 0. 4. 0. 4. 0.]
+Epoch 5:
+[5. 1. 3. 0. 4. 0. 4. 0.]
+Epoch 6:
+[5. 1. 3. 0. 4. 0. 4. 0.]
+
+Number of errors during each epoch:
+Epoch 1: 3
+Epoch 2: 5
+Epoch 3: 4
+Epoch 4: 4
+Epoch 5: 1
+Epoch 6: 0
+
+2. Spam vs. Non-Spam:
+
+Perceptron algorithm: 
+
+Converged after 18 epochs.
+
+Number of mistakes during each epoch:
+Epoch 1: 235
+Epoch 2: 64
+Epoch 3: 36
+Epoch 4: 23
+Epoch 5: 16
+Epoch 6: 6
+Epoch 7: 6
+Epoch 8: 11
+Epoch 9: 15
+Epoch 10: 25
+Epoch 11: 11
+Epoch 12: 10
+Epoch 13: 4
+Epoch 14: 3
+Epoch 15: 3
+Epoch 16: 5
+Epoch 17: 2
+Epoch 18: 1
+Epoch 19: 0
+
+Total number of mistakes: 476
+
+Accuracy on test data: 97.800%.
+
+Average Perceptron algorithm: 
+
+Converged after 18 epochs.
+
+Number of mistakes during each epoch:
+Epoch 1: 235
+Epoch 2: 64
+Epoch 3: 36
+Epoch 4: 23
+Epoch 5: 16
+Epoch 6: 6
+Epoch 7: 6
+Epoch 8: 11
+Epoch 9: 15
+Epoch 10: 25
+Epoch 11: 11
+Epoch 12: 10
+Epoch 13: 4
+Epoch 14: 3
+Epoch 15: 3
+Epoch 16: 5
+Epoch 17: 2
+Epoch 18: 1
+Epoch 19: 0
+
+Total number of mistakes: 476
+
+Accuracy on test data: 98.100%.
+
+3. Atheism vs. Religion:
+
+Accuracy of perceptron on test dataset version 1: 59.474%.
+Accuracy of perceptron on test dataset version 2: 59.298%.
+Accuracy of average perceptron on test dataset version 1: 60.877%.
+Accuracy of average perceptron on test dataset version 2: 61.579%.
