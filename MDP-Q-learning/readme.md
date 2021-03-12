@@ -1,3 +1,5 @@
+Please view the 'MDP-Q-learning.pdf' file for assignment details.
+
 1. Install Anaconda:
 https://docs.anaconda.com/anaconda/install/linux
 
