@@ -1,1 +1,1 @@
-Please view the 'softmax-regression.pdf' for assignment details.
+Please view the 'softmax-regression.pdf' file for assignment details.
