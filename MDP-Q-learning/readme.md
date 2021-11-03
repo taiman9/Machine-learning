@@ -1,4 +1,4 @@
-Please view the 'MDP-Q-learning.pdf' file for assignment details.
+Please view the *MDP-Q-learning.pdf* file for assignment details. Instruction to setup the project are below:
 
 1. Install Anaconda:
 https://docs.anaconda.com/anaconda/install/linux
