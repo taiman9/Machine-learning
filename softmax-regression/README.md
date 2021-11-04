@@ -7,22 +7,22 @@ scikit-learn, and evaluate them on the MNIST digit recognition task. Starter cod
 the MNIST dataset are available at http://ace.cs.ohio.edu/~razvan/courses/ml4900/
 hw04.zip. Make sure that you organize your code in folders as shown in the table below.
 Write code only in the Python files indicated in bold.
-```
+<pre>
 ml4900/
   hw04/
     code/
       scipy/
-        **`sofmax.py
+        <b>sofmax.py
         computeNumericalGradient.py
-        output.txt`**
+        output.txt</b>
         softmaxExercise.py
         checkNumericalGradient.py
       scikit/
-        **`sofmaxExercise.py
-        output.txt`**
+        <b>sofmaxExercise.py
+        output.txt</b>
       data/
         mnist/
-```        
+</pre>      
 ## SciPy Implementation
 
 Cost & Gradient: You will need to write code for two functions in sofmax.py:
