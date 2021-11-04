@@ -1,5 +1,5 @@
 In this project, I implement two versions of the softmax regression model in Python, using (1) SciPy and (2)
-scikit-learn, and evaluate them on the MNIST digit recognition task. Implementation details of the project are given below and can be also be found in the *softmax-regression.pdf* file. Please view the *Report.pdf* file for implementation results.
+scikit-learn, and evaluate them on the MNIST digit recognition task. Implementation details of the project are given below and can be also be viewed in the *softmax-regression.pdf* file. Please view the *Report.pdf* file for implementation results.
 
 # Implementation
 Implement two versions of the softmax regression model in Python, using (1) SciPy and (2)
