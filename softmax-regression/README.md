@@ -12,25 +12,27 @@ ml4900/
   hw04/
     code/
       scipy/
-        **sofmax.py
+        **`sofmax.py
         computeNumericalGradient.py
-        output.txt**
+        output.txt`**
         softmaxExercise.py
         checkNumericalGradient.py
       scikit/
-        **sofmaxExercise.py
-        output.txt**
+        **`sofmaxExercise.py
+        output.txt`**
       data/
         mnist/
 ```        
 ## SciPy Implementation
 
 Cost & Gradient: You will need to write code for two functions in sofmax.py:
+
 (a) ThesoftmaxCost()function, which computes the cost and the gradient.
+
 (b) ThesoftmaxPredict()function, which computes the softmax predictions on the
 input data.
 
-Vectorization:It is important to vectorize your code so that it runs quickly.
+Vectorization: It is important to vectorize your code so that it runs quickly.
 Ground truth: The ground Truth is a matrix M such that M[c, n] = 1 if sample n
 has label c, and 0 otherwise. This can be done quickly, without a loop, using the SciPy
 function sparse.coomatrix(). Specifically, coomatrix((data, (i, j))) constructs a
