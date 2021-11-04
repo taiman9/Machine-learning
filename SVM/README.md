@@ -1,1 +1,1 @@
-Please view the *SVM.pdf* file for assignment details.
+In this project, Train and test the SVM algorithm on the *Spam vs. Non-spam* and *Atheism vs. Religion* text classification tasks. I also implement an experimental evaluation of SVMs and the perceptron algorithm, with and without kernels, on the problem of classifying images representing digits. Please view the *perceptron.pdf* file for project details and the *Report.pdf* for implementation results.
