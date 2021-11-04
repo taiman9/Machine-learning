@@ -1,10 +1,10 @@
 In this project, I implement two versions of the softmax regression model in Python, using (1) SciPy and (2)
-scikit-learn, and evaluate them on the MNIST digit recognition task. Please view *softmax-regression.pdf* for project details and *Report.pdf* for implementation results.
+scikit-learn, and evaluate them on the MNIST digit recognition task. Implementation details of the project are given below and can be also be found in the *softmax-regression.pdf* file. Please view the *Report.pdf* file for implementation results.
 
 # Implementation
 Implement two versions of the softmax regression model in Python, using (1) SciPy and (2)
 scikit-learn, and evaluate them on the MNIST digit recognition task. Starter code and
-the MNIST dataset are available athttp://ace.cs.ohio.edu/~razvan/courses/ml4900/
+the MNIST dataset are available at http://ace.cs.ohio.edu/~razvan/courses/ml4900/
 hw04.zip. Make sure that you organize your code in folders as shown in the table below.
 Write code only in the Python files indicated in bold.
 
@@ -31,17 +31,17 @@ Cost & Gradient: You will need to write code for two functions in sofmax.py:
 input data.
 
 Vectorization:It is important to vectorize your code so that it runs quickly.
-Ground truth: ThegroundTruthis a matrix M such that M[c, n] = 1 if sample n
+Ground truth: The ground Truth is a matrix M such that M[c, n] = 1 if sample n
 has label c, and 0 otherwise. This can be done quickly, without a loop, using the SciPy
-function sparse.coomatrix(). Specifically,coomatrix((data, (i, j)))constructs a
+function sparse.coomatrix(). Specifically, coomatrix((data, (i, j))) constructs a
 matrix A such that A[i[k], j[k]] = data[k], where the shape is inferred from the index
 arrays. The code for cumputing the ground truth matrix has been provided for you.
-Overflow:Make sure that you prevent overflow when computing the softmax proba-
-bilities, as shown on the slides in Lecture 4.
-Numerical gradient:Once you implemented the cost and the gradient insoftmaxCost,
-implement code for computing the gradient numerically in computeNumericalGradi-
-ent.py. Code is provided in checkNumericalGradient.py for you to test your numerical gradient implementation.
-Gradient checking:Use computeNumericalGradient.py to make sure that your soft-
+Overflow: Make sure that you prevent overflow when computing the softmax proba-
+bilities.
+Numerical gradient: Once you implemented the cost and the gradient insoftmaxCost,
+implement code for computing the gradient numerically in computeNumericalGradient.py. 
+Code is provided in checkNumericalGradient.py for you to test your numerical gradient implementation.
+Gradient checking: Use computeNumericalGradient.py to make sure that your soft-
 maxCost.py is computing gradients correctly. This is done by running the main pro-
 gram in Debug mode, i.e.python3 softmaxExercise.py --debug. When debugging,
 you can speed up gradient checking by reducing the number of parameters your model
@@ -70,15 +70,15 @@ the confusion matrix.
 
 You will need to write code for the following 3 functionalities:
 
-C parameter: scikit’s objective function expresses the trade-off between training error and model complexity through a parameter C that is multiplied with the error term. Compute the C parameter such that the objective is
+C parameter: scikit’s objective function expresses the trade-off between training error and model complexity through a parameter C 
+that is multiplied with the error term. Compute the C parameter such that the objective is
 equivalent with the standard formulation used in scipy that multiplies the regularization parameter (called ’decay’ in the code) 
 with the L2 norm term.
 Softmax training: Train a softmax regression model using the ’multinomial’ option
 for multiclass classification, and the C parameter computed above. Specify training
 with the L-BFGS solver for 100 max iterations. For this, you will instantiate the class
 linearmodel.LogisticRegression.
-Softmax testing: Use the trained softmax model to compute labels on the test
-images.
+Softmax testing: Use the trained softmax model to compute labels on the test images.
 The code also computes and prints the accuracy on the test images. Report the overall test
 accuracy and the confusion matrix.
 
