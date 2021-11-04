@@ -33,16 +33,20 @@ Cost & Gradient: You will need to write code for two functions in sofmax.py:
 input data.
 
 Vectorization: It is important to vectorize your code so that it runs quickly.
+
 Ground truth: The ground Truth is a matrix M such that M[c, n] = 1 if sample n
 has label c, and 0 otherwise. This can be done quickly, without a loop, using the SciPy
 function sparse.coomatrix(). Specifically, coomatrix((data, (i, j))) constructs a
 matrix A such that A[i[k], j[k]] = data[k], where the shape is inferred from the index
 arrays. The code for cumputing the ground truth matrix has been provided for you.
+
 Overflow: Make sure that you prevent overflow when computing the softmax proba-
 bilities.
+
 Numerical gradient: Once you implemented the cost and the gradient insoftmaxCost,
 implement code for computing the gradient numerically in computeNumericalGradient.py. 
 Code is provided in checkNumericalGradient.py for you to test your numerical gradient implementation.
+
 Gradient checking: Use computeNumericalGradient.py to make sure that your soft-
 maxCost.py is computing gradients correctly. This is done by running the main pro-
 gram in Debug mode, i.e.python3 softmaxExercise.py --debug. When debugging,
@@ -54,6 +58,7 @@ In general, whenever implementing a learning algorithm, you should always check 
 gradients numerically before proceeding to train the model. The norm of the difference
 between the numerical gradient and your analytical gradient should be small, on the
 order of 10−^9.
+
 Training: Training your softmax regression is done using L-BFGS for 100 epochs,
 through the SciPy function scipy.optimize.fminlbfgsb(). Training the model on the
 entire MNIST training set of 60,000 28x28 images should be rather quick, and take
@@ -76,10 +81,12 @@ C parameter: scikit’s objective function expresses the trade-off between train
 that is multiplied with the error term. Compute the C parameter such that the objective is
 equivalent with the standard formulation used in scipy that multiplies the regularization parameter (called ’decay’ in the code) 
 with the L2 norm term.
+
 Softmax training: Train a softmax regression model using the ’multinomial’ option
 for multiclass classification, and the C parameter computed above. Specify training
 with the L-BFGS solver for 100 max iterations. For this, you will instantiate the class
 linearmodel.LogisticRegression.
+
 Softmax testing: Use the trained softmax model to compute labels on the test images.
 The code also computes and prints the accuracy on the test images. Report the overall test
 accuracy and the confusion matrix.
