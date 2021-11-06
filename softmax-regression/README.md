@@ -1,4 +1,4 @@
-# Softmax regression models using SciPy and scikit-learn evaluated on the MNIST digit recognition task
+# Softmax regression models using SciPy and scikit-learn evaluated on MNIST digit recognition task
 
 ## Description
 
