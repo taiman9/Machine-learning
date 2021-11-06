@@ -52,7 +52,7 @@ and evaluate on the dataset from the folder *hw01/data/polyfit*.
 
 (a) Select 30 values for x ∈ [0, 1] uniformly spaced, and generate corresponding t
 
-values according to t(x) = sin(2πx) + x(x + 1)/4 + \epsilon, where \epsilon = N(0, 0.005) is a
+values according to t(x) = sin(2πx) + x(x + 1)/4 + $\epsilon$, where $\epsilon$ = N(0, 0.005) is a
 
 
 
