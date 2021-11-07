@@ -1,5 +1,9 @@
-In this project, I implement an experimental evaluation of linear regression on the
-Athens houses dataset, and on an artificial dataset with and without L2 regularization using Python3.Please view the **Implementation** section in *linear-regression.pdf* for project details and *Report.pdf* for implementation results.
+# Linear Regression with and without L2 regularization using Python 3 
+
+## Description
+
+In this project, I implement an experimental evaluation of linear regression on the Athens houses dataset, 
+and on an artificial dataset with and without L2 regularization using Python 3. Implementation details are given below and can be found in the *Implementation* section in **linear-regression.pdf**. Please view the **Report.pdf** file for implementation results.
 
 ## Implementation
 
@@ -51,93 +55,31 @@ model, with and without regularization. Use the normal equations discussed in cl
 and evaluate on the dataset from the folder *hw01/data/polyfit*.
 
 (a) Select 30 values for x ∈ [0, 1] uniformly spaced, and generate corresponding t
+values according to ![](images/eq1.png), where ![](images/eq2.png) is a
+zero mean Gaussian with variance 0.005. Save and plot all the values. Done in **dataset.txt**.
 
-values according to t(x) = sin(2πx) + x(x + 1)/4 + $\epsilon$, where $\epsilon$ = N(0, 0.005) is a
+(b) Split the 30 samples (*x*<sub>n</sub>,*t*<sub>n</sub>) in three sets: 10 samples for training, 
+10 samples for validation, and 10 samples for testing. Save and plot the 3 datasets separately.
+Done in **train.txt**, **test.txt**, **devel.txt**.
 
+(c) Consider a linear regression model with polynomial basis functions, trained with the objective shown below:
 
+      ![](images/eq3.png)
 
-
-
-zero mean Gaussian with variance 0.005. Save and plot all the values. Done in
-
-dataset.txt.
-
-(b) Split the 30 samples (x , t ) in three sets: 10 samples for training, 10 samples for
-
-n
-
-validation, and 10 samples for testing. Save and plot the 3 datasets separately.
-
-n
-
-Done in train.txt, test.txt, devel.txt.
-
-(c) Consider a linear regression model with polynomial basis functions, trained with
-
-the objective shown below:
-
-XN
-
-Show the closed form solution (vectorized) for the weights w that minimize J(w).
-
-1
-
-λ
-
-2
-
-2
-
-J(w) =
-
-(h(x , w) − t ) + ||w||
-
-2
-
-n
-
-n
-
-2N
-
-n=1
+Show the closed form solution (vectorized) for the weights **w** that minimize ***J***(**w**).
 
 (d) Train and evaluate the linear regression model in the following scenarios:
 
-\1. Without regularization: Use the training data to infer the parameters w for
+1. **Without regularization:** Use the training data to infer the parameters w for all values of M ∈ [0, 9]. 
+For each order M, compute the RMSE separately for the training and test data, and plot all the values 
+on the same graph, as shown in class.
 
-all values of M ∈ [0, 9]. For each order M, compute the RMSE separately
+2. **With regularization:** Fixing M = 9, use the training data to infer the parameters w, one parameter vector 
+for each value of ln λ ∈ [−50, 0] in steps of 5. For each parameter vector (lambda value), compute the RMSE 
+separately for the training and validation data, and plot all the values on the same graph,as shown in class. 
+Select the regularization parameter that leads to the parameter vector that obtains the lowest RMSE on the 
+validation data, and use it to evaluate the model on the test data. Report and compare the test RMSE with the one 
+obtained without regularization.
 
-for the training and test data, and plot all the values on the same graph, as
-
-shown in class.
-
-\2. With regularization: Fixing M = 9, use the training data to infer the param-
-
-eters w, one parameter vector for each value of ln λ ∈ [−50, 0] in steps of 5.
-
-For each parameter vector (lambda value), compute the RMSE separately for
-
-the training and validation data, and plot all the values on the same graph,
-
-as shown in class. Select the regularization parameter that leads to the pa-
-
-rameter vector that obtains the lowest RMSE on the validation data, and
-
-use it to evaluate the model on the test data. Report and compare the test
-
-RMSE with the one obtained without regularization.
-
-(e) [20 Bonus points] Train and evaluate the linear regression model above using
-
-sklearn. For ridge regression, add the validation data to the training data and
-
-use the RidgeCV function to tune the hyper-parameter λ (use 10 folds).
-
-3 Submission
-
-Turn in a hard copy of your homework report at the beginning of class on the due date.
-
-Electronically submit on Blackboard a hw01.zip ﬁle that contains the hw01 folder in which
-
-your code is in the 3 required ﬁles.
+(e) [Bonus] Train and evaluate the linear regression model above using **sklearn**. For ridge regression, add the 
+validation data to the training data and use the *RidgeCV* function to tune the hyper-parameter λ (use 10 folds).
