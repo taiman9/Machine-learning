@@ -1,4 +1,6 @@
-In this project, I train and test the SVM algorithm on the *Spam vs. Non-spam* and *Atheism vs. Religion* text classification tasks. I also implement an experimental evaluation of SVMs and the perceptron algorithm, with and without kernels, on the problem of classifying images representing digits. Please view sections **2** and **3** in the *SVM.pdf* file for project details and the *Report.pdf* file for implementation results.
+# SVMS and perceptrons for classifying text and images representing digits using Python and Scikit-Learn
+
+In this project, I train and test the SVM algorithm on the text classification tasks as as well as implement experimental evaluation of SVMs and the perceptron algorithm with and without kernels on image classification problems using Python and Scikit-Learn. Implementaion details are given below and can be found in the **SVM.pdf8** file. Please view the **Report.pdf** file for implementation results.
 
 ### 1\. **Text Classiﬁcation** 
 
