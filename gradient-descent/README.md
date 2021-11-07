@@ -1,6 +1,10 @@
+# Implementing gradient descent algorithm to train linear regression models with and without L2 regularization 
+
+## Description
+
 In this project, I implement the gradient descent algorithm and use it to
 train linear regression models for the Athens houses dataset and an artificial dataset with
-and without L2 regularization using Python.Please view *gradient-descent.pdf* for assignment details and *Report.docx* for implementation results.
+and without L2 regularization using Python. Implementation details are given below and can also be found in the **gradient-descent.pdf** file. Please view the **Report.docx** file for implementation results.
 
 ## Implementation
 
@@ -72,8 +76,8 @@ Show the gradient update used for minimizing ***J***(**w**).
 
 (d) Train and evaluate the linear regression model in the following scenarios:
 
-1. <u>Without regularization</u>:** Using for M the value that obtained the lowest test
-RMSE in the ﬁrst homework, run gradient descent with a learning rate that
+1. **Without regularization:** Using for M the value that obtained the lowest test
+RMSE in the [linear regression](https://github.com/taiman9/Machine-learning/tree/master/linear-regression) homework, run gradient descent with a learning rate that
 is tuned on the training data using the following consecutive powers of 10:
 {0.0001, 0.001, 0.01, 0.1, 1, 10}. Plot ***J***(**w**) vs. epochs and select the largest
 learning rate that leads to a smooth, decreasing behavior of ***J***(**w**). If convergence appears to be too slow, 
@@ -81,11 +85,11 @@ you may consider consecutive powers of 2 in the same range for the learning rate
 run gradient descent at least as long as the relative decrease in ***J***(**w**) is 0.001 o larger after each epoch. 
 Compare the trained parameters with the solution obtained in the ﬁrst homework for the same degree M.
 
-2. <u>With regularization</u>: Fixing M = 9 and λ to the value tuned in the ﬁrst homework, repeat the experiments above, 
+2. **With regularization:** Fixing M = 9 and λ to the value tuned in the ﬁrst homework, repeat the experiments above, 
 this time with regularization. Compare the trained parameters with the solution obtained in the ﬁrst homework for
 the same degree M and λ.
 
-• **Stochastic Gradient Descent**(*****)
+• **Stochastic Gradient Descent**(*)
 
 Implement SGD and run it for problems 1, 2, and 3 above, using the same hyperparameters (learning rate, number of epochs, 
 M, and lambda). Compare the SGD solution to the batch GD solution. Does SGD need fewer or more epochs
