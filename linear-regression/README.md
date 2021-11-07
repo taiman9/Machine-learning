@@ -55,7 +55,8 @@ model, with and without regularization. Use the normal equations discussed in cl
 and evaluate on the dataset from the folder *hw01/data/polyfit*.
 
 (a) Select 30 values for x ∈ [0, 1] uniformly spaced, and generate corresponding t
-values according to *t*(*x*) = *sin*(2π*x*) + *x*(*x* + 1)/4 + ε, where ε = *N*(0,0.005) is a
+values according to 
+*t*(*x*) = *sin*(2π*x*) + *x*(*x* + 1)/4 + ε, where ε = *N*(0,0.005) is a
 zero mean Gaussian with variance 0.005. Save and plot all the values. Done in **dataset.txt**.
 
 (b) Split the 30 samples (*x*<sub>n</sub>,*t*<sub>n</sub>) in three sets: 10 samples for training, 
