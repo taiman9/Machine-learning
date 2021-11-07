@@ -1,6 +1,10 @@
 # SVMS and perceptrons for classifying text and images representing digits using Python and Scikit-Learn
 
+## Description
+
 In this project, I train and test the SVM algorithm on the text classification tasks as as well as implement experimental evaluation of SVMs and the perceptron algorithm with and without kernels on image classification problems using Python and Scikit-Learn. Implementaion details are given below and can be found in the **SVM.pdf8** file. Please view the **Report.pdf** file for implementation results.
+
+## Implementation
 
 ### 1\. **Text Classiﬁcation** 
 
@@ -51,7 +55,7 @@ hyper-parameters of the polynomial and Gaussian kernels. Use C = 1 in all SVM
 experiments. Report the same types of results and analysis as above, and compare
 with the perceptron results.
 
-### Obtain Results
+## Obtain Results
 
 Make sure you include a **README.txt** ﬁle explaining how the code is supposed to be used to replicate the results 
 included in the report. The screen output produced when running the code should be redirected to (saved into) an **output.txt** ﬁle.
