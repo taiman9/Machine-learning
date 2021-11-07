@@ -64,7 +64,7 @@ Done in **train.txt**, **test.txt**, **devel.txt**.
 
 (c) Consider a linear regression model with polynomial basis functions, trained with the objective shown below:
 
-      ![](images/eq3.png)
+![](images/eq3.png)
 
 Show the closed form solution (vectorized) for the weights **w** that minimize ***J***(**w**).
 
