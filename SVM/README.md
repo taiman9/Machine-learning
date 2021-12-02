@@ -2,7 +2,7 @@
 
 ## Description
 
-In this project, I train and test the SVM algorithm on the text classification tasks as as well as implement experimental evaluation of SVMs and the perceptron algorithm with and without kernels on image classification problems using Python and Scikit-Learn. Implementaion details are given below and can be found in the **SVM.pdf8** file. Please view the **Report.pdf** file for implementation results.
+In this project, I train and test the SVM algorithm on the text classification tasks as as well as implement experimental evaluation of SVMs and the perceptron algorithm with and without kernels on image classification problems using Python and Scikit-Learn. Implementaion details are given below and can be found in the **SVM.pdf** file. Please view the **Report.pdf** file for implementation results.
 
 ## Implementation
 
